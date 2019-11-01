@@ -1,4 +1,4 @@
-Role Name
+reboot
 =========
 
 Reboot a node and wait until it comes up again.
