@@ -1,3 +1,5 @@
+![Ansible Lint](https://github.com/johanneskastl/ansible-role-reboot/workflows/Ansible%20Lint/badge.svg)
+
 reboot
 =========
 
