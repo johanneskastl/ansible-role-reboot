@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: 'reboot'
+  namespace: 'johanneskastl'
   author: 'Johannes Kastl'
   description: 'Reboot a node and wait for it to come up again'
   company: 'B1 Systems GmbH'
