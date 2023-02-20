@@ -1,0 +1,5 @@
+---
+# reboot/defaults/main.yml
+
+reboot_check_delay: 15
+reboot_check_timeout: 60
