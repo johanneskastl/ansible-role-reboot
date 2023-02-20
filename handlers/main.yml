@@ -6,6 +6,8 @@
   async: 1
   poll: 0
   failed_when: false
+  when:
+    - 'not ansible_check_mode | bool'
 
 - name: 'Wait for the machine(s) to be ready again'
   ansible.builtin.wait_for:
@@ -15,3 +17,5 @@
     timeout: '60'
   delegate_to: 'localhost'
   become: false
+  when:
+    - 'not ansible_check_mode | bool'
