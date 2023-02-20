@@ -14,7 +14,7 @@
     host: "{{ inventory_hostname }}"
     state: 'started'
     delay: "{{ reboot_check_delay }}"
-    timeout: '60'
+    timeout: "{{ reboot_check_timeout }}"
   delegate_to: 'localhost'
   become: false
   when:
