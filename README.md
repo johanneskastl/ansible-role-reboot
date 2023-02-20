@@ -33,6 +33,16 @@ dependencies:
   - role: 'johanneskastl.reboot'
 ```
 
+Then you can notify this role's handlers from the other role's tasks:
+
+```yaml
+- name: Task that triggers a reboot
+  [...]
+  notify:
+    - 'Reboot'
+    - 'Wait for the machine(s) to be ready again'
+```
+
 License
 -------
 
