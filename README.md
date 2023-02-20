@@ -23,9 +23,15 @@ None
 Example Playbook
 ----------------
 
-    - hosts: servers
-      roles:
-         - { role: 'johanneskastl.reboot' }
+This role is meant to be added as a dependency to other roles, that need to trigger a reboot and wait for the machine to be reachable again.
+
+Add it to the other role's `meta/main.yml` file like so:
+
+```yaml
+[...]
+dependencies:
+  - role: 'johanneskastl.reboot'
+```
 
 License
 -------
